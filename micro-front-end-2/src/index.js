@@ -1,1 +1,1 @@
-document.querySelector('#microFrontEnd2').innerHTML = '<h1>-micro-front-end2</h1>'
+document.querySelector('#microFrontend2').innerHTML = '<h1>Micro-Front-End-2</h1>'

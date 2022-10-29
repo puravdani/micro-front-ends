@@ -1,1 +1,1 @@
-document.querySelector('#root').innerHTML = '<h1>-micro-front-end1</h1>'
+document.querySelector('#root').innerHTML = '<h1>Micro-Front-End-1</h1>'

@@ -1,0 +1,1 @@
+document.querySelector('#microFrontEnd2').innerHTML = '<h1>-micro-front-end2</h1>'

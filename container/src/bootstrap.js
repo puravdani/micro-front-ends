@@ -1,5 +1,3 @@
-import 'microFrontEnd1/MicroFrontEnd1Index';
-import 'microFrontEnd2/MicroFrontEnd2Index';
+import 'accountMFE/AccountInformationIndex';
 
-
-console.log('Container11!');
+console.log('Container!');

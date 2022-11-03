@@ -4,18 +4,27 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 module.exports = {
     mode: 'development',
     devServer: {
-      port: 8080,
+      port: 8084,
     },
     plugins:[
       new ModuleFederationPlugin({
-        name: 'container',
-        remotes: {
-          accountMFE: 'accountInformation@http://localhost:8083/remoteEntry.js',
-          customerProfileMFE: 'customerProfile@http://localhost:8084/remoteEntry.js'
+        name: 'customerProfile',
+        filename: 'remoteEntry.js',
+        exposes: {
+          './CustomerProfileIndex': './src/index',
         },
       }),
       new HtmlWebpackPlugin({
         template: './public/index.html'
       })
-    ]
+    ],
+    module: {
+      rules: [
+        {
+          test: /\.jsx?$/,
+          loader: 'babel-loader',
+          exclude: /node_modules/
+        }
+      ]
+    }
   };

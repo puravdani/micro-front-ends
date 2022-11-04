@@ -20,6 +20,11 @@ npm install webpack webpack-cli webpack-server html-webpack-plugin webpack-dev-s
 # Reference
 Reference from https://medium.com/nerd-for-tech/micro-front-ends-hands-on-project-63bd3327e162
 
+# TODO
+# Graphql (GraphQL library is Apollo Client)
+# Redux State Management
+
+
 # FYI
 # Check the version of dependency in a project
 npm view react version
